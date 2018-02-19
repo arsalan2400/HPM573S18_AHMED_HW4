@@ -74,9 +74,9 @@ class Rounds:
     def totalavgcost(self):
         return sum(self.tallytotal)/ len(self.tallytotal)
 
-myRounds = Rounds(numberofrounds)
+setofrounds = Rounds(numberofrounds)
 numberofrounds = 1000
-myRounds.playagame()
+setofrounds.playagame()
 print ("This is a self-check. The # of rounds is...", numberofrounds)
 print("\n____________________________\n")
 
@@ -85,4 +85,4 @@ print("With an initial buyin of...", initialbuyin, "USD$")
 print("And a reward for a TAIL-TAILS-HEAD sequence being...", reward, "USD$")
 print("Out of a total of...", numberofrounds, "rounds")
 print("With...", numberoftosses, "tosses per round")
-print("The expected payout from this game is...", myRounds.totalavgcost(), "USD$")
+print("The expected payout from this game is...", setofrounds.totalavgcost(), "USD$")
