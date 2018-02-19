@@ -15,9 +15,9 @@ class CoinGame(Enum): # State of each coin toss
 class Game: #create cointoss game
     def __init__(self):
         self._probabilityofheads = headprobability #Heads?
-        self._CoinGame = [] #Whst's the winning outcome?
+        self._CoinGame = [] #What's the winning outcome?
         self._superresult = [] #All toss outcome
-        self._rnd = np.random #randomizer!
+        self._rnd = np.random #it's a randomizer!
         #note: you'll get a diff result every time b/c randomized tosses.
 
     def simulate(self, numberoftosses):
