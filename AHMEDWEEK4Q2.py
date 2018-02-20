@@ -37,12 +37,13 @@ class Game: #create cointoss game
 headprobability = 0.4
 initialbuyin = 250
 numbertosses = 20
+print("This is a self-check. The reward for TAIL-TAILS-HEAD sequence is...", reward, "USD$")
 print ("This is a self-check. The probs of heads is...", headprobability)
 print ("This is a self-check. The # of tosses per round is...", numbertosses)
 
-class Rounds:
+class therounds:
     def __init__(self, rounds):
-        self.Rounds = rounds
+        self.therounds = rounds
         self.supergames = []
         for i in range(rounds):
             game = Game()
@@ -66,16 +67,13 @@ class Rounds:
         return sum(self.tallytotal)/ len(self.tallytotal)
 
 numberofrounds = 1000
-myRounds = Rounds(numberofrounds)
-myRounds.playagame()
+these_rounds = therounds(numberofrounds)
+these_rounds.playagame()
 
 
 print ("This is a self-check. The # of rounds is...", numberofrounds)
-print("\n____________________________\n")
+print("____________________________\n")
 
 
 print("With an initial buyin of...", initialbuyin, "USD$")
-print("And a reward for a TAIL-TAILS-HEAD sequence being...", reward, "USD$")
-print("Out of a total of...", numberofrounds, "rounds")
-print("With...", numbertosses, "tosses per round")
-print("The expected payout from this game is...", myRounds.totalavgcost(), "USD$")
+print("The expected payout from this game is...", these_rounds.totalavgcost(), "USD$")
