@@ -72,7 +72,7 @@ myRounds.playagame()
 
 
 print ("This is a self-check. The # of rounds is...", numberofrounds)
-print("\n____________________________\n")
+print("____________________________\n")
 
 
 print("With an initial buyin of...", initialbuyin, "USD$")
