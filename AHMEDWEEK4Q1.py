@@ -41,9 +41,9 @@ print("This is a self-check. The reward for TAIL-TAILS-HEAD sequence is...", rew
 print ("This is a self-check. The probs of heads is...", headprobability)
 print ("This is a self-check. The # of tosses per round is...", numbertosses)
 
-class Rounds:
+class therounds:
     def __init__(self, rounds):
-        self.Rounds = rounds
+        self.therounds = rounds
         self.supergames = []
         for i in range(rounds):
             game = Game()
@@ -67,8 +67,8 @@ class Rounds:
         return sum(self.tallytotal)/ len(self.tallytotal)
 
 numberofrounds = 1000
-myRounds = Rounds(numberofrounds)
-myRounds.playagame()
+these_rounds = therounds(numberofrounds)
+these_rounds.playagame()
 
 
 print ("This is a self-check. The # of rounds is...", numberofrounds)
@@ -76,4 +76,4 @@ print("____________________________\n")
 
 
 print("With an initial buyin of...", initialbuyin, "USD$")
-print("The expected payout from this game is...", myRounds.totalavgcost(), "USD$")
+print("The expected payout from this game is...", these_rounds.totalavgcost(), "USD$")
